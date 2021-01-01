@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>E10s training</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.8/pixi.min.js" integrity="sha512-sSAdD5F4KTNhbn+dNCMjsF5SUcDgjrJnYUnrM3rSngcABsDQ0iO3bdeDjguwsNyVtkMGamiDEb6v6xgVMLqy3A==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>
+        E10s training game, by Alice Heuz on Phoenix
+    </h1>
+    <div>
+        You can use keyboard arrows, mouse or touchscreen to move your character around.
+    </div>
+    <div id="view" style="margin: 16px 0px;">
+    </div>
+    <div>
+        Difficulty :<br>
+        <input type="radio" name="difficulty" value="easy" onChange="setDifficulty('easy');"> <b>Easy</b> : Display cleaved half<br>
+        <input type="radio" name="difficulty" value="normal" onChange="setDifficulty('normal');" checked> <b>Normal</b> : Normal mechanic setting<br>
+        <input type="radio" name="difficulty" value="hard" onChange="setDifficulty('hard');"> <b>Hard</b> : Only a few seconds to move, same timing as the Voidgates then Giga Slash mechanic<br>
+        <input type="radio" name="difficulty" value="veryhard" onChange="setDifficulty('veryhard');"> <b>Very hard</b> : No side callout, even less time than in the fight<br>
+        <input type="radio" name="difficulty" value="drunk" onChange="setDifficulty('drunk');"> <b>Drunk</b> : After trying to forget you wiped in Sastasha
+    </div>
+    <div>
+        <input type="checkbox" id="rotate" onChange="setRotate();"> Rotate the camera to be behind the shadow (easy and normal difficulties only)
+    </div>
+    <script type="text/javascript" src="e10s.js?v=20210101"></script>
+</body>
