@@ -150,14 +150,22 @@ drawBase();
 var movement = {};
 function processKey(e, down) {
     var delta = 5;
+    var handled = false;
     if(e.key == 'ArrowUp' || e.keyCode == 38) {
         movement.up = down;
+        handled = true;
     } else if(e.key == 'ArrowDown' || e.keyCode == 40) {
         movement.down = down;
+        handled = true;
     } else if(e.key == 'ArrowLeft' || e.keyCode == 37) {
         movement.left = down;
+        handled = true;
     } else if(e.key == 'ArrowRight' || e.keyCode == 39) {
         movement.right = down;
+        handled = true;
+    }
+    if(handled) {
+        e.preventDefault();
     }
 }
 
