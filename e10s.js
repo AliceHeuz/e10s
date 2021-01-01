@@ -1,3 +1,5 @@
+// Under CC-BY-SA 4.0 Licence : https://creativecommons.org/licenses/by-sa/4.0/
+
 // PIXI init
 var app = new PIXI.Application(600, 700, { backgroundColor: 0x1099bb });
 document.getElementById("view").appendChild(app.view);
